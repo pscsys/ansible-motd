@@ -1,0 +1,6 @@
+---
+
+- name: install motd related packages
+  package:
+    name: '{{ motd_packages }}'
+    state: present
