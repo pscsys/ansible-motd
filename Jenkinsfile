@@ -15,7 +15,7 @@ pipeline {
     stage ('Deploy the shit to another machine') {
       steps {
         sh '''
-          scp -r /tmp/scptest/ 192.168.0.36:/tmp/
+          ssh 192.168.0.36 git clone https://github.com/pscsys/ansible-motd /tmp/ansible-motd
         '''
       }
     }
