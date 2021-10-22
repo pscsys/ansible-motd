@@ -7,7 +7,7 @@ pipeline {
     stage ('Molecule test') {
       steps {
         sh '''
-          /var/lib/jenkins/.local/bin/molecule test
+          molecule test
         '''
       }
     }
