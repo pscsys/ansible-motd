@@ -7,7 +7,7 @@ pipeline {
     stage ('Molecule test') {
       steps {
         sh '''
-          export PATH="$PATH:/var/lib/jenkins/.local/bin/molecule"
+          export PATH="$PATH:/var/lib/jenkins/.local/bin"
           molecule test
         '''
       }
