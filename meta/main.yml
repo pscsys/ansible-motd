@@ -4,6 +4,7 @@ dependencies: []
 
 galaxy_info:
   role_name: motd
+  namespace: motd
   author: 'Adfinis SyGroup AG'
   description: 'Set the MOTD'
   company: 'Adfinis SyGroup AG'
