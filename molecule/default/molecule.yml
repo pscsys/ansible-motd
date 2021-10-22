@@ -2,8 +2,6 @@
 dependency:
   name: galaxy
 driver:
-  name: vagrant
-  provider:
     name: podman
 platforms:
   - name: centos7
