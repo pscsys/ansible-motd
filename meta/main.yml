@@ -3,7 +3,7 @@
 dependencies: []
 
 galaxy_info:
-  role_name: ansible-motd
+  role_name: ansible_motd
   author: 'Adfinis SyGroup AG'
   description: 'Set the MOTD'
   company: 'Adfinis SyGroup AG'
