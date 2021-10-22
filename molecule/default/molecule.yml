@@ -4,7 +4,7 @@ dependency:
 driver:
   name: vagrant
   provider:
-    name: virtualbox
+    name: podman
 platforms:
   - name: centos7
     box: centos/7
