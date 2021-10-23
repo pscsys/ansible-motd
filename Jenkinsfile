@@ -15,11 +15,24 @@ pipeline {
           python3 -m pip install --upgrade ansible molecule
         '''
       }
+    }
+    
+    stage ('Display versions') {
+      steps {
+        sh '''
+          source virtenv/bin/activate
+          docker -v
+          python -V
+          ansible --version
+          molecule --version
+        '''
+      }
     }    
 
     stage ('Molecule test') {
       steps {
         sh '''
+          source virtenv/bin/activate
           molecule test
         '''
       }
