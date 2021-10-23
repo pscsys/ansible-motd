@@ -21,7 +21,6 @@ pipeline {
       steps {
         sh '''
           source virtenv/bin/activate
-          docker -v
           python -V
           ansible --version
           molecule --version
